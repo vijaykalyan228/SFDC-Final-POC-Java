@@ -1,0 +1,44 @@
+<%@page import="com.helpers.AuthenticateAuthorizeTest"%>
+<%@ page pageEncoding="UTF-8" %>
+<div id="container-fluid">
+
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 center-block">
+        <table id="tblLocations" class="table table-striped text-center">
+            <tr>
+                <th class="text-center">Location Name</th>
+                <th class="text-center">Address</th>
+                <th/>
+            </tr>
+        </table>
+    </div>
+    <div class="col-sm-2"></div>
+
+
+    <script>
+        var locations = JSON.parse(JSON.stringify(<%= AuthenticateAuthorizeTest.getServiceLocations()%>));
+        for (var i = 0; i < locations.totalSize; i++)
+        {
+            var tr = "<tr>";
+            var td1 = "<td class='col-xs-3'>" + locations["records"][i]["Name"] + "</td>";
+            var td2 = "<td class='col-xs-6'>"
+                    + "<address>"
+                    + locations["records"][i]["pricesenz__Door_Number__c"] + " "
+                    + locations["records"][i]["pricesenz__Street_Name__c"] + "<br/>"
+                    + locations["records"][i]["pricesenz__City__c"] + " "
+                    + locations["records"][i]["pricesenz__State__c"] + " "
+                    + "</address>"
+                    + "</td>";
+            var toggle = "<td id='btnToggles' class='col-xs-3'>"
+                    + "<div class='onoffswitch'>"
+                    + "<input type='checkbox' name='onoffswitch' class='onoffswitch-checkbox' id='location" + i + "' checked>"
+                    + "<label class='onoffswitch-label' for='location" + i + "'>"
+                    + "<span class='onoffswitch-inner'></span>"
+                    + "<span class='onoffswitch-switch'></span>"
+                    + "</label></div>"
+                    + "</td>";
+            var ctr = "</tr>";
+            $("#tblLocations").append(tr + td1 + td2 + toggle + ctr);
+        }
+    </script>
+</div>

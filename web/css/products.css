@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 Mar, 2017, 4:28:18 PM
+    Author     : VijayKalyan
+*/
+
+body{
+    background-image: url("../images/blurred4.jpg");
+    background-size: cover;
+}
+
+.card{
+    border-radius: 6px !important;
+}
+
+.card-action {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+@media (max-width: 990px) {
+    .card-content {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card-content {
+        width: auto;
+        height: 150px;
+    }
+}
+
+.productFamily{
+    color: whitesmoke;
+}
+
+a.deco-none {
+    color:#000000 !important;
+    text-decoration:none;
+
+}
