@@ -11,7 +11,13 @@ import com.sforce.soap.enterprise.sobject.PricebookEntry;
 import com.sforce.soap.enterprise.sobject.Product2;
 import com.sforce.soap.enterprise.sobject.SObject;
 import com.sforce.ws.ConnectionException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.HashMap;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -21,6 +27,22 @@ import org.json.JSONObject;
  */
 public class ProductsHelper {
 
+    public static String getStaticProductList() {
+        try {
+            String path = Thread.currentThread().getContextClassLoader().getResource("products.json").getPath();
+            File json = new File(path);
+            Scanner in = new Scanner(new FileReader(json));
+            String retVal = "";
+            while(in.hasNextLine()){
+                retVal += in.nextLine();
+            }
+            return retVal;
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(ProductsHelper.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        }
+    }
+    
     public static String getProductList() {
         try {
             EnterpriseConnection conn = ServiceLocationsHelper.getSoapConnection();
@@ -28,10 +50,14 @@ public class ProductsHelper {
             String query = "SELECT Id,Name,Pricebook2Id,Product2Id FROM PricebookEntry "
                     + "where Pricebook2Id='01s410000060yT5AAI'";
 
+            if(conn == null){
+                System.out.println("Null Connection Object");
+            }
             QueryResult qResult = conn.query(query);
             SObject[] pbEntries = qResult.getRecords();
             return buildJson(pbEntries).toString(2);
         } catch (ConnectionException | JSONException ex) {
+            ex.printStackTrace();
             return null;
         }
     }

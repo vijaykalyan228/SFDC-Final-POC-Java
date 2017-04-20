@@ -45,20 +45,14 @@ public class LoginHelper {
 
         HttpClient httpClient = new DefaultHttpClient();
         HttpParams params = httpClient.getParams();
-//        HttpClientParams.setCookiePolicy(params, CookiePolicy.RFC_2109);
-//        params.setParameter(HttpConnectionParams.CONNECTION_TIMEOUT, 30000);
 
         HttpPost post = new HttpPost(baseUrl);
 
         List<BasicNameValuePair> parametersBody = new ArrayList<>();
-
-//        parametersBody.add(new BasicNameValuePair("grant_type", "password"));
         parametersBody.add(new BasicNameValuePair("grant_type", "authorization_code"));
         parametersBody.add(new BasicNameValuePair("client_id", clientId));
         parametersBody.add(new BasicNameValuePair("client_secret", client_secret));
         parametersBody.add(new BasicNameValuePair("code", code));
-//        parametersBody.add(new BasicNameValuePair("username", uname));
-//        parametersBody.add(new BasicNameValuePair("password", passd+token));
         parametersBody.add(new BasicNameValuePair("redirect_uri", redirectUri));
         parametersBody.add(new BasicNameValuePair("Content-Type", "application/x-www-form-urlencoded"));
 

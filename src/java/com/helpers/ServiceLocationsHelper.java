@@ -130,6 +130,7 @@ public class ServiceLocationsHelper {
 //        System.out.println("AccessToken:\t"+accessToken);
         sfconfig.setSessionId(accessToken);
         sfconfig.setServiceEndpoint(loginInstanceUrl + SOAP_ENDPOINT);
+        System.out.println("loginInstanceUrl:\t"+loginInstanceUrl);
         EnterpriseConnection con = null;
         try {
             con = Connector.newConnection(sfconfig);

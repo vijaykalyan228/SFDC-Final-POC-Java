@@ -4,11 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/user/Documents/NetBeansProjects/SFDC%20Final%20POC/web/redirect.jsp</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/SFDC%20Final%20POC/config.properties</file>
             <file>file:/C:/Users/user/Documents/NetBeansProjects/SFDC%20Final%20POC/src/java/com/helpers/LoginHelper.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/SFDC%20Final%20POC/src/java/com/services/ProductsServelet.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/SFDC%20Final%20POC/web/index.jsp</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/SFDC%20Final%20POC/src/java/com/helpers/ServiceLocationsHelper.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/SFDC%20Final%20POC/src/java/com/helpers/AuthenticateAuthorizeTest.java</file>
         </group>
     </open-files>
 </project-private>

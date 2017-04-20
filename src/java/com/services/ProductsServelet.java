@@ -23,7 +23,7 @@ public class ProductsServelet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.getWriter().write(ProductsHelper.getProductList());
+        response.getWriter().write(ProductsHelper.getStaticProductList());
     }
 
     @Override

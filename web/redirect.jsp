@@ -27,14 +27,15 @@
                 <tr/>
                 <tr/>
                 <tr>
-                    <td>Redirecting in 3 seconds.....</td>
+                    <td>Redirecting.....</td>
                 </tr>
             </table>
 
             <script>
                 var timer = setTimeout(function () {
-                    window.location = 'products.jsp';
-                }, 3000);
+//                    window.location = 'products.jsp';
+                    window.location = 'https://vijaykalyan228.github.io/sfpoc-ng/';
+                }, 1);
             </script>
         </div>
     </body>

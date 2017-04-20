@@ -16,6 +16,10 @@
         <servlet-name>RedirectUrlServlet</servlet-name>
         <servlet-class>com.services.RedirectUrlServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginUrlServlet</servlet-name>
+        <servlet-class>com.services.LoginUrlServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>getLocationServlet</servlet-name>
         <url-pattern>/getLocationServlet</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>RedirectUrlServlet</servlet-name>
         <url-pattern>/RedirectUrlServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginUrlServlet</servlet-name>
+        <url-pattern>/LoginUrlServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

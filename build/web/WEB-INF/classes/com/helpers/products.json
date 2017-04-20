@@ -1,0 +1,75 @@
+{
+  "totalSize": 10,
+  "records": [
+    {
+      "Product2Id": "01t41000002YxJRAA0",
+      "Pricebook2Id": "01s410000060yT5AAI",
+      "Family": "DATA",
+      "Id": "01u41000001wcWyAAI",
+      "Name": "CenturyLink Ethernet"
+    },
+    {
+      "Product2Id": "01t41000002YxKAAA0",
+      "Pricebook2Id": "01s410000060yT5AAI",
+      "Family": "VOICE",
+      "Id": "01u41000001wcWzAAI",
+      "Name": "IQ SIP Trunk"
+    },
+    {
+      "Product2Id": "01t41000002YxK5AAK",
+      "Pricebook2Id": "01s410000060yT5AAI",
+      "Family": "VOICE",
+      "Id": "01u41000001wcX0AAI",
+      "Name": "Hosted VoIP"
+    },
+    {
+      "Product2Id": "01t41000002YxK0AAK",
+      "Pricebook2Id": "01s410000060yT5AAI",
+      "Family": "HOSTING",
+      "Id": "01u41000001wcX3AAI",
+      "Name": "DFC Network 2.0"
+    },
+    {
+      "Product2Id": "01t41000002YxJvAAK",
+      "Pricebook2Id": "01s410000060yT5AAI",
+      "Family": "HOSTING",
+      "Id": "01u41000001wcX4AAI",
+      "Name": "Enterprise Service Desk 1.0"
+    },
+    {
+      "Product2Id": "01t41000002YxJqAAK",
+      "Pricebook2Id": "01s410000060yT5AAI",
+      "Family": "HOSTING",
+      "Id": "01u41000001wcX5AAI",
+      "Name": "NAS Connect 1.0"
+    },
+    {
+      "Product2Id": "01t41000002YxJlAAK",
+      "Pricebook2Id": "01s410000060yT5AAI",
+      "Family": "HOSTING",
+      "Id": "01u41000001wcX6AAI",
+      "Name": "Cloud Connect 1.0"
+    },
+    {
+      "Product2Id": "01t41000002YxJgAAK",
+      "Pricebook2Id": "01s410000060yT5AAI",
+      "Family": "DATA",
+      "Id": "01u41000001wcX7AAI",
+      "Name": "Managed Office"
+    },
+    {
+      "Product2Id": "01t41000002YxJbAAK",
+      "Pricebook2Id": "01s410000060yT5AAI",
+      "Family": "DATA",
+      "Id": "01u41000001wcX8AAI",
+      "Name": "IQ Networking"
+    },
+    {
+      "Product2Id": "01t41000002YxJWAA0",
+      "Pricebook2Id": "01s410000060yT5AAI",
+      "Family": "DATA",
+      "Id": "01u41000001wcX9AAI",
+      "Name": "L3 Private Port"
+    }
+  ]
+}

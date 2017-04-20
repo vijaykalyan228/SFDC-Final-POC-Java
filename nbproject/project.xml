@@ -64,6 +64,10 @@
                     <file>${file.reference.config.properties}</file>
                     <path-in-war>/WEB-INF/classes</path-in-war>
                 </library>
+                <library dirs="200">
+                    <file>${file.reference.products.json}</file>
+                    <path-in-war>//WEB-INF/classes</path-in-war>
+                </library>
             </web-module-additional-libraries>
             <source-roots>
                 <root id="src.dir"/>
