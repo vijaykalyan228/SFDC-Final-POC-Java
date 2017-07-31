@@ -1,0 +1,41 @@
+{
+    "term": ["1 year", "2 years", "3 years", "5 years"],
+    "locations": [
+        {
+            "address": "687 Mitchell Port Daly City, CA",
+            "latitude": "37.687895",
+            "longitude": "-122.470269",
+            "available": "true"
+        },
+        {
+            "address": "555 Valley View Lane Irving, TX",
+            "latitude": "32.820314",
+            "longitude": "-97.031478",
+            "available": "true"
+        },
+        {
+            "address": "334 5th Street Oakland, CA",
+            "latitude": "37.796637",
+            "longitude": "-122.271335",
+            "available": "true"
+        },
+        {
+            "address": "90 Stevens Parkway San Jose, CA",
+            "latitude": "37.796637",
+            "longitude": "-122.271335",
+            "available": "false"
+        }
+    ],
+    "EVC": [
+        {
+            "type": ["Evlan", "Evpline"]
+        },
+        {
+            "tbandwidth": ["50 Mbps", "100 Mbps", "200 Mbps", "500 Mbps", "1 Gbps"]
+        },
+        {
+            "geography": ["National", "State", "Metro"]
+        }
+    ],
+    "class of service": ["business class"]
+}
